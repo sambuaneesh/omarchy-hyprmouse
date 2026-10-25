@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omarchy-hyprmouse"
+dynamic = ["version"]
+description = "Mouse buttons, lighting and sensitivity for Omarchy / Hyprland, with pluggable hardware drivers"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+authors = [{ name = "Aneesh Sambu" }]
+dependencies = ["textual>=1.0", "evdev>=1.6", "rich>=13"]
+classifiers = [
+    "Environment :: Console :: Curses",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: System :: Hardware",
+]
+
+[project.urls]
+Homepage = "https://github.com/sambuaneesh/omarchy-hyprmouse"
+Issues = "https://github.com/sambuaneesh/omarchy-hyprmouse/issues"
+
+[project.scripts]
+omarchy-hyprmouse = "hyprmouse.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "hyprmouse.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["hyprmouse*"]
+
+[tool.setuptools.package-data]
+hyprmouse = ["data/*.lua", "profiles/**/*.toml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

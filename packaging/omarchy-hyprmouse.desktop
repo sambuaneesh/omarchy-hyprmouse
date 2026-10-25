@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Mouse (hyprmouse)
+GenericName=Mouse buttons, lighting and sensitivity
+Comment=Choose what your mouse buttons do; lighting and DPI for supported mice
+Exec=omarchy-launch-or-focus-tui --app-id=org.omarchy.hyprmouse omarchy-hyprmouse
+Icon=input-mouse
+Terminal=false
+Categories=Settings;HardwareSettings;
+Keywords=mouse;buttons;remap;razer;dpi;lighting;rgb;hyprland;omarchy;

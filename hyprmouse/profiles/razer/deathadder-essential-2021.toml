@@ -1,0 +1,31 @@
+# Razer DeathAdder Essential (2021). Verified on real hardware.
+name = "Razer DeathAdder Essential (2021)"
+driver = "razer"
+usb = ["1532:0098"]
+
+# Buttons whose function is stored in the mouse. Keyed by the Linux button code
+# the button sends by default; `id` is the mouse's own button number.
+[buttons.274]
+name = "Wheel click"
+id = 0x03
+
+[buttons.275]
+name = "Side button, rear"
+id = 0x04
+
+[buttons.276]
+name = "Side button, front"
+id = 0x05
+
+[lighting]
+effects = ["static", "breathing", "off"]
+zones = [{ key = "logo", name = "Logo", led = 0x04 }]
+
+[performance]
+dpi = [100, 6400, 100]
+dpi_presets = [400, 800, 1600, 3200, 6400]
+poll_rates = [125, 500, 1000]
+
+[razer]
+interface = 0
+transaction_id = { buttons = 0x1F, misc = 0xFF, lighting = 0x3F }

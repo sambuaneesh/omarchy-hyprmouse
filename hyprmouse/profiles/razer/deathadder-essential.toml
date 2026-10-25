@@ -1,0 +1,33 @@
+# Razer DeathAdder Essential. From OpenRazer's driver; not yet confirmed on real hardware
+# (run `omarchy-hyprmouse --doctor --scan` and open an issue if you own one).
+name = "Razer DeathAdder Essential"
+driver = "razer"
+usb = ["1532:006e"]
+
+[buttons.274]
+name = "Wheel click"
+id = 0x03
+
+[buttons.275]
+name = "Side button, rear"
+id = 0x04
+
+[buttons.276]
+name = "Side button, front"
+id = 0x05
+
+[lighting]
+effects = ["static", "breathing", "off"]
+zones = [
+  { key = "logo", name = "Logo", led = 0x04 },
+  { key = "scroll", name = "Scroll wheel", led = 0x01 },
+]
+
+[performance]
+dpi = [100, 6400, 100]
+dpi_presets = [400, 800, 1600, 3200, 6400]
+poll_rates = [125, 500, 1000]
+
+[razer]
+interface = 0
+transaction_id = { buttons = 0x1F, misc = 0xFF, lighting = 0x3F }
