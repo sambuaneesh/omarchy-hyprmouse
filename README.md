@@ -5,7 +5,7 @@ search for any Omarchy hotkey ("former workspace", "screenshot", "close window"â
 supported mice it also unlocks what's stored *inside* the mouse: buttons turned off by vendor
 software, on-mouse media keys, lighting, DPI and polling rate. No Windows, no Synapse.
 
-![Customize tab](docs/screenshots/customize.png)
+![Customize tab](docs/screenshots/customize.svg)
 
 ## What it does
 
@@ -16,6 +16,8 @@ software, on-mouse media keys, lighting, DPI and polling rate. No Windows, no Sy
   combination**, or do **nothing**.
 - **Press P, then the button** you want to change. No need to know its name.
 - Changes apply instantly. Left and right click are locked so you can never lose clicking.
+
+![Searching for an action](docs/screenshots/picker.svg)
 
 **Hardware features**, for mice that have a profile (see the list below):
 
@@ -28,7 +30,7 @@ Everything stored in the mouse stays after unplugging and works on other compute
 
 | Lighting | Performance |
 | --- | --- |
-| ![Lighting tab](docs/screenshots/lighting.png) | ![Performance tab](docs/screenshots/performance.png) |
+| ![Lighting tab](docs/screenshots/lighting.svg) | ![Performance tab](docs/screenshots/performance.svg) |
 
 ## Supported mice
 
