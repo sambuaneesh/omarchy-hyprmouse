@@ -11,7 +11,7 @@ makedepends=('python-build' 'python-installer' 'python-setuptools' 'python-wheel
 checkdepends=('python-pytest')
 install=omarchy-hyprmouse.install
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
-sha256sums=('SKIP')
+sha256sums=('d1dd67e9b52ed9bae854af248ebbd6fe31ba17006fb9c555c12533b6eb4a64c2')
 
 build() {
   cd "$pkgname-$pkgver"
